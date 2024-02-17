@@ -1,0 +1,105 @@
+@import '../../app.scss';
+
+
+.hero
+{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #1111);
+}
+.wrappe
+{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+}
+.textContain
+{
+    width: 50%;
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    @include mobile {
+        width: 100%;
+        height: 50%;
+        margin-left: 0;
+        text-align: center;
+        
+    }
+}
+h2
+{
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: rebeccapurple;
+}
+.textContain h1
+{
+    font-size: 88px;
+
+    @include mobile {
+        font-size: 36px;
+    }
+}
+.tombol a
+{
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.imgContain
+{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    left: 800px;
+    
+
+    @include mobile {
+        width: 100%;
+        height: 50%;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
+.slidingText
+{
+    position: absolute;
+    width: 80%;
+    font-weight: bold;
+    font-size: 40vh;
+    bottom: -60px;
+    white-space: nowrap;
+    color: #ffffff09;
+
+    @include mobile {
+        width: 150%;
+        font-size: 30vh;
+        position: sticky;
+
+    }
+    
+}
+.imgContain img
+{
+    width: 50%;
+    
+}

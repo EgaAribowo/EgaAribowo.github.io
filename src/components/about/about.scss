@@ -1,0 +1,168 @@
+@import '../../app.scss';
+
+
+.about
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #0c0c1d, #1111);
+    justify-content: space-between;
+}
+.text
+{
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+    }
+}
+.text p
+{
+    font-weight: 200;
+    font-style: 20px;
+    text-align: right;
+    color: grey;
+}
+hr
+{
+    width: 500px;
+    border: none;
+    border-top: .5px solid grey;
+
+    @include mobile {
+        width: 300px;
+    }
+}
+.titleContain
+{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+.title
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+ h1
+{
+    font-size: 96px;
+    font-weight: 100;
+
+    @include mobile {
+        font-size: 36px;
+    }
+}
+.title button
+{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    background: orange;
+    font-size: 24px;
+    cursor: pointer;
+    
+    @include mobile {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+
+    }
+}
+.list
+{
+    max-width: 1366px;
+    display: flex;
+    flex: 2;
+    margin: auto;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+.list .box
+{
+    height: 260px;
+    padding: 30px;
+    flex-direction: column;
+    border: .5px solid gray;
+    background: transparent;
+    justify-content: space-between;
+
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        border: none;
+    }
+}
+.list .boxT
+{
+    width: 210PX;
+    height: 260px;
+    padding: 30px;
+    flex-direction: column;
+    border: .5px solid gray;
+    background: transparent;
+    justify-content: space-between;
+
+    @include mobile {
+        display: none;
+    }
+}
+.list .box p
+{
+    margin-top: 15px;
+    
+}
+.list .boxT p
+{
+    margin-top: 15px;
+    
+}
+.list button
+{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+
+    @include mobile {
+        width: 50%;
+        background: transparent;
+        border: 1px solid orange;
+        border-radius: 5px;
+        color: red;
+        padding: 5px;
+        margin-top: 20px;
+    }
+}
+.list .boxT button
+{
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+}
